@@ -2,16 +2,16 @@
 
 Lights Out is a classic puzzle game where the objective is to turn off all the lights on a grid. Each click toggles a light and its adjacent neighbors. The game is won when all lights are turned off.
 
-![Lights Out Game Screenshot](./assets/imgs/lightsout.PNG)
+[![Lights Out Game Screenshot](./assets/imgs/lightsout.PNG)](https://hesbon-osoro.github.io/lights-out/)
 
 - **5x5**
-![5x5](./assets/imgs/lightsout5x5.PNG)
+[![5x5](./assets/imgs/lightsout5x5.PNG)](https://hesbon-osoro.github.io/lights-out/)
 
 - **Settings**
-![Settings](./assets/imgs/lightsoutsettings.PNG)
+[![Settings](./assets/imgs/lightsoutsettings.PNG)](https://hesbon-osoro.github.io/lights-out/)
 
 - **Solved**
-![Solved](./assets/imgs/lightsoutsolved.PNG)
+[![Solved](./assets/imgs/lightsoutsolved.PNG)](https://hesbon-osoro.github.io/lights-out/)
 
 ## Features
 
@@ -45,6 +45,9 @@ Lights Out is a classic puzzle game where the objective is to turn off all the l
 ## Installation
 
 1. Clone the repository or download the source code.
+```bash
+git clone https://github.com/hesbon-osoro/lights-out.git
+```
 2. Open `index.html` in your browser to play the game.
 
 ## Technologies Used
