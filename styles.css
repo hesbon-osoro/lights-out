@@ -1,0 +1,186 @@
+/* General body styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Game container styling */
+#gameContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading styling */
+#gameContainer h1 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Information text styling */
+#information {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+/* Button container styling */
+#buttonContainer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* Styling for the bottom buttons using their IDs */
+#newGame3x3Button,
+#newGame5x5Button,
+#solveForMeButton,
+#settingsButton {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+#newGame3x3Button:hover,
+#newGame5x5Button:hover,
+#solveForMeButton:hover,
+#settingsButton:hover {
+  background-color: #0056b3;
+}
+
+/* Grid and light styles */
+.grid3x3,
+.grid5x5,
+.gridCustom {
+  display: grid;
+  grid-gap: 2px;
+  margin-bottom: 16px;
+  background-color: #333;
+  padding: 2px;
+  border-radius: 8px;
+}
+
+.grid3x3 {
+  grid-template-columns: repeat(3, 32px);
+  grid-template-rows: repeat(3, 32px);
+}
+
+.grid5x5 {
+  grid-template-columns: repeat(5, 32px);
+  grid-template-rows: repeat(5, 32px);
+}
+
+.gridCustom {
+  /* Custom grid size will be set dynamically in JavaScript */
+  grid-template-columns: repeat(var(--grid-size), 32px);
+  grid-template-rows: repeat(var(--grid-size), 32px);
+}
+
+.lightOn,
+.lightOff {
+  border: 1px solid #555;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.lightOn {
+  background-color: var(--light-on-color, yellow);
+  /* Default to yellow */
+}
+
+.lightOff {
+  background-color: var(--light-off-color, black);
+  /* Default to black */
+}
+
+/* Color picker styling */
+input[type="color"] {
+  width: 100%;
+  height: 40px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+/* Modal styling */
+#settingsModal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  width: 300px;
+}
+
+#settingsModal h2 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+#settingsModal label {
+  display: block;
+  margin: 10px 0 5px;
+  font-size: 14px;
+  color: #555;
+}
+
+#settingsModal select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+#settingsModal button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin-right: 10px;
+}
+
+#settingsModal button:hover {
+  background-color: #0056b3;
+}
+
+#settingsModal #closeSettings {
+  background-color: #6c757d;
+}
+
+#settingsModal #closeSettings:hover {
+  background-color: #5a6268;
+}
