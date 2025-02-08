@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Lights Out</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="LightsOut.js"></script>
+  </head>
+  <body>
+    <div id="gameContainer">
+      <h1>Lights Out Game</h1>
+      <div id="gameGrid"></div>
+      <div id="information"></div>
+      <div id="buttonContainer">
+        <input id="newGame3x3Button" type="button" value="New game (3x3)">
+        <input id="newGame5x5Button" type="button" value="New game (5x5)">
+        <input id="solveForMeButton" type="button" value="Solve automatically">
+        <input id="settingsButton" type="button" value="Settings">
+      </div>
+    </div>
+    <!-- Settings Modal -->
+    <div id="settingsModal">
+      <h2>Customize Game</h2>
+      <label for="gridSize">Grid Size:</label>
+      <select id="gridSize">
+        <option value="3">3x3</option>
+        <option value="5">5x5</option>
+      </select>
+      <!-- Light On Color Picker -->
+      <label for="lightOnColor">Light On Color:</label>
+      <input type="color" id="lightOnColor" value="#ffff00">
+      <!-- Light Off Color Picker -->
+      <label for="lightOffColor">Light Off Color:</label>
+      <input type="color" id="lightOffColor" value="#000000">
+      <button id="applySettings">Apply</button>
+      <button id="closeSettings">Close</button>
+    </div>
+  </body>
+</html>
